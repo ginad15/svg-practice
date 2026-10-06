@@ -1,0 +1,262 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sepiaSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5e6cc"/>
+      <stop offset="100%" stop-color="#e8d5b7"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c547"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cd7f32"/>
+      <stop offset="100%" stop-color="#8b4513"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8adb0"/>
+      <stop offset="100%" stop-color="#6e7174"/>
+    </linearGradient>
+    <linearGradient id="leather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5a2b"/>
+      <stop offset="100%" stop-color="#5d3a1a"/>
+    </linearGradient>
+    <linearGradient id="pelicanBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f8f0"/>
+      <stop offset="100%" stop-color="#e8e0d0"/>
+    </linearGradient>
+    <linearGradient id="billGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4c430"/>
+      <stop offset="100%" stop-color="#d4a017"/>
+    </linearGradient>
+    <linearGradient id="pouchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e07b39"/>
+      <stop offset="100%" stop-color="#b85c2a"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8d0"/>
+      <stop offset="70%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sepiaSky)"/>
+
+  <!-- vignette -->
+  <rect width="800" height="600" fill="url(#vignette)"/>
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#2a2518" stop-opacity="0.15"/>
+    </radialGradient>
+  </defs>
+
+  <!-- decorative border corners -->
+  <g fill="none" stroke="#8b6914" stroke-width="2" opacity="0.3">
+    <path d="M20 20h60M20 20v60"/>
+    <path d="M780 20h-60M780 20v60"/>
+    <path d="M20 580h60M20 580v-60"/>
+    <path d="M780 580h-60M780 580v-60"/>
+  </g>
+
+  <!-- ground -->
+  <path d="M0 540 Q200 510 400 535 T800 530 V600 H0 Z" fill="#d4c4a8"/>
+  <path d="M0 540 Q200 510 400 535 T800 530" fill="none" stroke="#b8a080" stroke-width="3"/>
+
+  <!-- cobblestone texture -->
+  <g fill="#c4b090" opacity="0.15">
+    <circle cx="100" cy="560" r="12"/>
+    <circle cx="180" cy="570" r="10"/>
+    <circle cx="300" cy="555" r="14"/>
+    <circle cx="450" cy="565" r="11"/>
+    <circle cx="580" cy="550" r="13"/>
+    <circle cx="680" cy="570" r="9"/>
+    <circle cx="750" cy="560" r="12"/>
+  </g>
+
+  <!-- lamp post -->
+  <g>
+    <path d="M680 540 L680 280 Q680 250 710 250 L710 200" stroke="url(#steel)" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="695" cy="210" r="30" fill="url(#lampGlow)" opacity="0.9"/>
+    <circle cx="695" cy="210" r="28" fill="none" stroke="url(#brass)" stroke-width="4"/>
+    <path d="M695 182 L695 160" stroke="url(#brass)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- distant buildings silhouettes -->
+  <g fill="#2a2518" opacity="0.12">
+    <path d="M0 540 L50 420 L100 480 L150 400 L200 460 L250 540 Z"/>
+    <path d="M550 540 L580 380 L620 450 L660 360 L700 430 L740 540 Z"/>
+  </g>
+
+  <!-- ============ PENNY-FARTHING BICYCLE ============ -->
+  <g>
+    <!-- LARGE front wheel (penny) -->
+    <circle cx="480" cy="400" r="165" fill="none" stroke="url(#steel)" stroke-width="10"/>
+    <circle cx="480" cy="400" r="165" fill="none" stroke="#4a3f2a" stroke-width="2"/>
+    <circle cx="480" cy="400" r="12" fill="url(#brass)"/>
+
+    <!-- front wheel spokes (many, radial) -->
+    <g stroke="#6e7174" stroke-width="1.5" opacity="0.7">
+      <g transform="rotate(0 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+        <line x1="318" y1="400" x2="642" y2="400"/>
+      </g>
+      <g transform="rotate(30 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+      </g>
+      <g transform="rotate(60 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+      </g>
+      <g transform="rotate(15 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+      </g>
+      <g transform="rotate(45 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+      </g>
+      <g transform="rotate(75 480 400)">
+        <line x1="480" y1="238" x2="480" y2="562"/>
+      </g>
+    </g>
+
+    <!-- front tire (solid rubber look) -->
+    <circle cx="480" cy="400" r="160" fill="none" stroke="#2a2518" stroke-width="4"/>
+
+    <!-- SMALL rear wheel (farthing) -->
+    <circle cx="670" cy="500" r="42" fill="none" stroke="url(#steel)" stroke-width="6"/>
+    <circle cx="670" cy="500" r="42" fill="none" stroke="#4a3f2a" stroke-width="2"/>
+    <circle cx="670" cy="500" r="6" fill="url(#brass)"/>
+
+    <g stroke="#6e7174" stroke-width="1.5" opacity="0.7">
+      <line x1="670" y1="460" x2="670" y2="540"/>
+      <line x1="630" y1="500" x2="710" y2="500"/>
+      <line x1="640" y1="470" x2="700" y2="530"/>
+      <line x1="700" y1="470" x2="640" y2="530"/>
+    </g>
+    <circle cx="670" cy="500" r="37" fill="none" stroke="#2a2518" stroke-width="3"/>
+
+    <!-- Frame: from front wheel hub to rear wheel -->
+    <path d="M480 400 Q540 340 620 460" fill="none" stroke="url(#steel)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M480 400 L620 460" fill="none" stroke="url(#brass)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Front fork -->
+    <path d="M480 400 L480 280" fill="none" stroke="url(#steel)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M475 400 L475 280" fill="none" stroke="#4a3f2a" stroke-width="3"/>
+    <path d="M485 400 L485 280" fill="none" stroke="#4a3f2a" stroke-width="3"/>
+
+    <!-- Handlebar (moustache style) -->
+    <path d="M430 280 Q430 250 480 250 Q530 250 530 280" fill="none" stroke="url(#steel)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M432 282 Q432 255 480 255 Q528 255 528 282" fill="none" stroke="url(#brass)" stroke-width="3" stroke-linecap="round"/>
+    <rect x="420" y="275" width="20" height="15" rx="3" fill="url(#leather)"/>
+    <rect x="560" y="275" width="20" height="15" rx="3" fill="url(#leather)"/>
+
+    <!-- Pedals on front wheel (direct drive) -->
+    <g transform="rotate(-30 480 400)">
+      <path d="M480 400 L480 270" fill="none" stroke="url(#steel)" stroke-width="5" stroke-linecap="round"/>
+      <rect x="468" y="265" width="24" height="10" rx="3" fill="url(#leather)" stroke="#3a2f1a" stroke-width="2"/>
+    </g>
+
+    <!-- Rear wheel mount / backbone -->
+    <path d="M620 460 L670 500" fill="none" stroke="url(#steel)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Saddle (leather, sprung) -->
+    <path d="M540 350 Q540 330 560 330 Q580 330 580 350" fill="url(#leather)" stroke="#3a2f1a" stroke-width="3"/>
+    <path d="M545 350 Q560 325 575 350" fill="none" stroke="#3a2f1a" stroke-width="2" stroke-dasharray="5 3"/>
+    <!-- saddle springs -->
+    <g stroke="url(#steel)" stroke-width="3" fill="none">
+      <path d="M550 350 L550 380"/>
+      <path d="M570 350 L570 380"/>
+    </g>
+    <rect x="540" y="375" width="40" height="8" fill="url(#steel)" rx="2"/>
+
+    <!-- Rear step / mounting peg -->
+    <path d="M660 490 L660 520" fill="none" stroke="url(#steel)" stroke-width="6" stroke-linecap="round"/>
+    <rect x="650" y="515" width="20" height="10" rx="2" fill="url(#leather)"/>
+
+    <!-- Headlamp (oil lamp) -->
+    <g transform="translate(480, 240)">
+      <rect x="-14" y="-18" width="28" height="30" rx="3" fill="url(#brass)" stroke="#8b6914" stroke-width="2"/>
+      <circle cx="0" cy="-4" r="10" fill="#fffbe6" opacity="0.95"/>
+      <path d="M0 -14 Q0 -20 6 -20 Q12 -20 12 -14" fill="none" stroke="url(#brass)" stroke-width="3" stroke-linecap="round"/>
+      <rect x="-3" y="-22" width="6" height="4" fill="url(#steel)"/>
+    </g>
+
+    <!-- Tool bag on frame -->
+    <path d="M550 410 L550 440 Q550 450 560 450 L590 450 Q600 450 600 440 L600 410 Z" fill="url(#leather)" stroke="#3a2f1a" stroke-width="2"/>
+    <path d="M560 410 L560 440 M590 410 L590 440" stroke="#3a2f1a" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Chain / drive (conceptual, since direct drive on front) -->
+    <g stroke="#3a2f1a" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4">
+      <path d="M480 400 Q520 430 580 450"/>
+    </g>
+  </g>
+
+  <!-- ============ PELICAN (Victorian gentleman style) ============ -->
+  <g>
+    <!-- tail feathers -->
+    <path d="M340 330 Q290 310 260 325 Q285 330 300 342 Q275 335 260 350 Q290 345 320 358 Z" fill="#e0d8cc" stroke="#c8b8a8" stroke-width="2"/>
+
+    <!-- body -->
+    <ellipse cx="390" cy="330" rx="85" ry="60" fill="url(#pelicanBody)" stroke="#d0c4b0" stroke-width="2" transform="rotate(-5 390 330)"/>
+
+    <!-- vest / waistcoat -->
+    <path d="M380 290 Q400 280 430 290 L430 350 Q410 360 370 350 L370 290 Z" fill="#1a3a5c" opacity="0.9"/>
+    <path d="M395 290 L395 350" stroke="#c8a840" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+    <circle cx="395" cy="305" r="4" fill="url(#brass)"/>
+    <circle cx="395" cy="325" r="4" fill="url(#brass)"/>
+    <circle cx="395" cy="345" r="4" fill="url(#brass)"/>
+
+    <!-- neck -->
+    <path d="M440 300 Q465 260 495 235" stroke="url(#pelicanBody)" stroke-width="30" fill="none" stroke-linecap="round"/>
+
+    <!-- head -->
+    <circle cx="502" cy="215" r="32" fill="url(#pelicanBody)" stroke="#d0c4b0" stroke-width="2"/>
+
+    <!-- top hat -->
+    <path d="M465 185 L465 130 Q465 120 475 120 L535 120 Q545 120 545 130 L545 185 Z" fill="#1a1a1a" stroke="#0a0a0a" stroke-width="2"/>
+    <path d="M455 185 L555 185" fill="none" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round"/>
+    <path d="M480 130 L520 130" fill="none" stroke="#c8a840" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- monocle -->
+    <circle cx="530" cy="205" r="18" fill="none" stroke="url(#brass)" stroke-width="4"/>
+    <circle cx="530" cy="205" r="16" fill="#e8f4fd" opacity="0.3"/>
+    <path d="M548 205 L570 205" fill="none" stroke="url(#brass)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- bill (upper) -->
+    <path d="M526 200 L670 218 L526 230 Z" fill="url(#billGrad)" stroke="#b8860b" stroke-width="2" stroke-linejoin="round"/>
+    <!-- pouch -->
+    <path d="M526 230 Q595 275 670 218 Q610 255 526 230 Z" fill="url(#pouchGrad)" stroke="#b85c2a" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M546 236 Q598 262 656 226" fill="none" stroke="#9a4a20" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- eye -->
+    <circle cx="508" cy="202" r="6" fill="#1a1a1a"/>
+    <circle cx="510" cy="200" r="2" fill="#fff"/>
+
+    <!-- wing resting on handlebar -->
+    <path d="M350 310 C400 270 475 270 515 285 C505 310 445 330 400 335 C365 328 348 320 350 310 Z" fill="#e8e0d0" stroke="#c8b8a8" stroke-width="2.5" stroke-linejoin="round"/>
+    <g fill="none" stroke="#c8b8a8" stroke-width="2.5" stroke-linecap="round">
+      <path d="M372 320 C415 305 455 298 490 294"/>
+      <path d="M385 332 C425 318 458 308 486 302"/>
+    </g>
+    <!-- wingtip on grip -->
+    <path d="M490 278 q20-4 28 8-8 14-28 10-12-10 0-22z" fill="#e8e0d0" stroke="#c8b8a8" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- legs (in spats/gaiters) -->
+    <g stroke="#1a1a1a" stroke-width="8" fill="none" stroke-linecap="round">
+      <path d="M400 370 Q405 405 410 440"/>
+      <path d="M375 372 Q372 410 370 445"/>
+    </g>
+    <!-- spats (white gaiters over shoes) -->
+    <g fill="#f0efe8" stroke="#c8b8a8" stroke-width="2" stroke-linejoin="round">
+      <path d="M392 430 h32 l-6 14 h-28z"/>
+      <path d="M358 435 h32 l-6 14 h-28z"/>
+    </g>
+
+    <!-- pocket watch chain -->
+    <path d="M430 300 Q450 310 430 325" fill="none" stroke="url(#brass)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="430" cy="328" r="6" fill="url(#brass)"/>
+  </g>
+
+  <!-- signature / label -->
+  <text x="400" y="585" font-family="Georgia, serif" font-size="16" fill="#5a4a3a" text-anchor="middle" opacity="0.7" font-style="italic">
+    The Penny-Farthing Pelican — Circa 1887
+  </text>
+</svg>
